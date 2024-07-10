@@ -17,7 +17,7 @@ export default function App() {
   const [location, setLocation] = useState('');
   const [data, setData] = useState(null)
 
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=3ba4b85ae3db442eb5d30844240807&q=${location}&days=5&aqi=no&alerts=no`
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=3ba4b85ae3db442eb5d30844240807&q=${location}&days=5&aqi=no&alerts=no`
 
   const handleLocation = (event) => {
     setLocation(event.target.value)
