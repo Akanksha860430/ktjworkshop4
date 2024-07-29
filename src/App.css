@@ -86,7 +86,7 @@ position: sticky;
 
 
   transform-origin: 0 0;
-  transform: rotate(-60deg);
+  transform: rotate(-45deg);
 }
 .days-detail{
  display: flex;

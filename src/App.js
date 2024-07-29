@@ -134,8 +134,8 @@ export default function App() {
         {data && <div className="hours-detail">
           <div className="check">
             <div className="am">
-          <p>{ data.forecast && data.forecast.forecastday[0].hour[8].condition.text }</p>
-            <p>{data && data.forecast && data.forecast.forecastday[0].hour[8].temp_c.toFixed()}°C</p>
+          <p>{ data.forecast && data.forecast.forecastday[0]?.hour[8].condition.text }</p>
+            <p>{data && data.forecast && data.forecast.forecastday[0]?.hour[8].temp_c.toFixed()}°C</p>
             </div>
             <h2>8am</h2>
           </div>
@@ -143,8 +143,8 @@ export default function App() {
 
           <div className="check">
           <div className="am">
-          <p>{ data.forecast && data.forecast.forecastday[0].hour[10].condition.text }</p>
-            <p>{ data.forecast && data.forecast.forecastday[0].hour[10].temp_c.toFixed() }°C</p>
+          <p>{ data.forecast && data.forecast.forecastday[0]?.hour[10].condition.text }</p>
+            <p>{ data.forecast && data.forecast.forecastday[0]?.hour[10].temp_c.toFixed() }°C</p>
          
           </div>
           <h2>10am</h2>
@@ -153,40 +153,40 @@ export default function App() {
 
           <div className="check">
           <div className="pm">
-          <p>{ data.forecast && data.forecast.forecastday[0].hour[12].condition.text }</p>
-            <p>{ data.forecast && data.forecast.forecastday[0].hour[12].temp_c.toFixed()}°C</p>
+          <p>{ data.forecast && data.forecast.forecastday[0]?.hour[12].condition.text }</p>
+            <p>{ data.forecast && data.forecast.forecastday[0]?.hour[12].temp_c.toFixed()}°C</p>
           </div>
           <h2>12pm</h2>
           </div>
 
           <div className="check">
           <div className="pm">
-          <p>{ data.forecast && data.forecast.forecastday[0].hour[14].condition.text }</p>
-            <p>{ data.forecast && data.forecast.forecastday[0].hour[14].temp_c.toFixed()}°C</p>
+          <p>{ data.forecast && data.forecast.forecastday[0]?.hour[14].condition.text }</p>
+            <p>{ data.forecast && data.forecast.forecastday[0]?.hour[14].temp_c.toFixed()}°C</p>
           </div>
           <h2>2pm</h2>
           </div>
 
           <div className="check">
           <div className="pm">
-          <p>{ data.forecast && data.forecast.forecastday[0].hour[16].condition.text }</p>
-            <p>{ data.forecast && data.forecast.forecastday[0].hour[16].temp_c.toFixed()}°C</p>
+          <p>{ data.forecast && data.forecast.forecastday[0]?.hour[16].condition.text }</p>
+            <p>{ data.forecast && data.forecast.forecastday[0]?.hour[16].temp_c.toFixed()}°C</p>
           </div>
           <h2>4pm</h2>
           </div>
 
           <div className="check">
           <div className="pm">
-          <p>{ data.forecast && data.forecast.forecastday[0].hour[18].condition.text }</p>
-            <p>{ data.forecast && data.forecast.forecastday[0].hour[18].temp_c.toFixed()}°C</p>
+          <p>{ data.forecast && data.forecast.forecastday[0]?.hour[18].condition.text }</p>
+            <p>{ data.forecast && data.forecast.forecastday[0]?.hour[18].temp_c.toFixed()}°C</p>
           </div>
           <h2>6pm</h2>
           </div>
 
           <div className="check">
           <div className="pm">
-          <p>{ data.forecast && data.forecast.forecastday[0].hour[20].condition.text }</p>
-            <p>{ data.forecast && data.forecast.forecastday[0].hour[20].temp_c.toFixed()}°C</p>
+          <p>{ data.forecast && data.forecast.forecastday[0]?.hour[20].condition.text }</p>
+            <p>{ data.forecast && data.forecast.forecastday[0]?.hour[20].temp_c.toFixed()}°C</p>
           </div>
           <h2>8pm</h2>
           </div>
@@ -197,44 +197,44 @@ export default function App() {
        <div className="days-detail">
  <div className="day">
             <div className="tilt">
-          <p>Max Temperature { data.forecast && data.forecast.forecastday[0].day.maxtemp_c.toFixed() }°C</p>
-            <p>Min Temperature {data && data.forecast && data.forecast.forecastday[0].day.mintemp_c.toFixed()}°C</p>
-            <p>{ data.forecast && data.forecast.forecastday[0].hour[12].condition.text} at 12pm</p>
+          <p>Max Temperature { data.forecast && data.forecast.forecastday[0]?.day.maxtemp_c.toFixed() }°C</p>
+            <p>Min Temperature {data && data.forecast && data.forecast.forecastday[0]?.day.mintemp_c.toFixed()}°C</p>
+            <p>{ data.forecast && data.forecast.forecastday[0]?.hour[12].condition.text} at 12pm</p>
             </div>
-            <h2>{data && data.forecast && data.forecast.forecastday[0].date}</h2>
+            <h2>{data && data.forecast && data.forecast.forecastday[0]?.date}</h2>
           </div>
  <div className="day">
             <div className="tilt">
-          <p>Max Temperature { data.forecast && data.forecast.forecastday[1].day.maxtemp_c.toFixed() }°C</p>
-            <p>Min Temperature {data && data.forecast && data.forecast.forecastday[1].day.mintemp_c.toFixed()}°C</p>
-            <p>{ data.forecast && data.forecast.forecastday[1].hour[12].condition.text} at 12pm</p>
+          <p>Max Temperature { data.forecast && data.forecast.forecastday[1]?.day.maxtemp_c.toFixed() }°C</p>
+            <p>Min Temperature {data && data.forecast && data.forecast.forecastday[1]?.day.mintemp_c.toFixed()}°C</p>
+            <p>{ data.forecast && data.forecast.forecastday[1]?.hour[12].condition.text} at 12pm</p>
             </div>
-            <h2>{data && data.forecast && data.forecast.forecastday[1].date}</h2>
+            <h2>{data && data.forecast && data.forecast.forecastday[1]?.date}</h2>
           </div>
  <div className="day">
             <div className="tilt">
-          <p>Max Temperature { data.forecast && data.forecast.forecastday[2].day.maxtemp_c.toFixed() }°C</p>
-            <p>Min Temperature {data && data.forecast && data.forecast.forecastday[2].day.mintemp_c.toFixed()}°C</p>
-            <p>{ data.forecast && data.forecast.forecastday[2].hour[12].condition.text} at 12pm</p>
+          <p>Max Temperature { data.forecast && data.forecast.forecastday[2]?.day.maxtemp_c.toFixed() }°C</p>
+            <p>Min Temperature {data && data.forecast && data.forecast.forecastday[2]?.day.mintemp_c.toFixed()}°C</p>
+            <p>{ data.forecast && data.forecast.forecastday[2]?.hour[12].condition.text} at 12pm</p>
             </div>
-            <h2>{data && data.forecast && data.forecast.forecastday[2].date}</h2>
+            <h2>{data && data.forecast && data.forecast.forecastday[2]?.date}</h2>
+          </div>
+ {/* <div className="day">
+            <div className="tilt">
+          <p>Max Temperature { data.forecast && data.forecast.forecastday[3]?.day.maxtemp_c.toFixed() }°C</p>
+            <p>Min Temperature {data && data.forecast && data.forecast.forecastday[3]?.day.mintemp_c.toFixed()}°C</p>
+            <p>{ data.forecast && data.forecast.forecastday[3]?.hour[12].condition.text} at 12pm</p>
+            </div>
+            <h2>{data && data.forecast && data.forecast.forecastday[3]?.date}</h2>
           </div>
  <div className="day">
             <div className="tilt">
-          <p>Max Temperature { data.forecast && data.forecast.forecastday[3].day.maxtemp_c.toFixed() }°C</p>
-            <p>Min Temperature {data && data.forecast && data.forecast.forecastday[3].day.mintemp_c.toFixed()}°C</p>
-            <p>{ data.forecast && data.forecast.forecastday[3].hour[12].condition.text} at 12pm</p>
+          <p>Max Temperature { data.forecast && data.forecast.forecastday[4]?.day.maxtemp_c.toFixed() }°C</p>
+            <p>Min Temperature {data && data.forecast && data.forecast.forecastday[4]?.day.mintemp_c.toFixed()}°C</p>
+            <p>{ data.forecast && data.forecast.forecastday[4]?.hour[12].condition.text} at 12pm</p>
             </div>
-            <h2>{data && data.forecast && data.forecast.forecastday[3].date}</h2>
-          </div>
- <div className="day">
-            <div className="tilt">
-          <p>Max Temperature { data.forecast && data.forecast.forecastday[4].day.maxtemp_c.toFixed() }°C</p>
-            <p>Min Temperature {data && data.forecast && data.forecast.forecastday[4].day.mintemp_c.toFixed()}°C</p>
-            <p>{ data.forecast && data.forecast.forecastday[4].hour[12].condition.text} at 12pm</p>
-            </div>
-            <h2>{data && data.forecast && data.forecast.forecastday[4].date}</h2>
-          </div>
+            <h2>{data && data.forecast && data.forecast.forecastday[4]?.date}</h2>
+          </div> */}
 
 
        </div>
